@@ -111,15 +111,25 @@
 </nav>
 
 <!-- Hero Video Section -->
+<!--<section class="hero-video">-->
+<!--    <div class="video-container">-->
+<!--        <video autoplay muted loop>-->
+<!--            <source src="videos/hero-video.webm" type="video/webm">-->
+<!--            Your browser does not support the video tag.-->
+<!--        </video>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Hero Video Section -->
 <section class="hero-video">
     <div class="video-container">
-        <video autoplay muted loop>
+        <video autoplay muted loop playsinline>
             <source src="videos/hero-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <!-- Fallback image if video doesn't load -->
+            <img src="images/hero-fallback.jpg" alt="Censor AI Introduction">
         </video>
     </div>
 </section>
-
 
 <!-- Hero Section -->
 <header class="hero-section bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 pt-32">
