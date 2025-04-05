@@ -16,7 +16,36 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #334155;
     line-height: 1.6;
-}
+}/* Global Container Padding */
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Override Bootstrap's container if needed */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 90%; /* Adjust as needed */
+    }
+  }
+  
+  /* Ensure full-width elements respect padding */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* For edge-to-edge elements that should break out */
+  .full-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
 
 h1,
 h2,
